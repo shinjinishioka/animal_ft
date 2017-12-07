@@ -1,0 +1,91 @@
+body {
+	background-color: black;
+}
+
+a.ƒNƒ‰ƒX–¼ { /*ƒŠƒ“ƒN‚³‚ê‚½•¶Žš*/
+	color: 0000ff;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+a:link { /*–¢–K–â‚ÌƒŠƒ“ƒN*/
+	color: #ffffff;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+a:visited { /*–K–âŒã‚ÌƒŠƒ“ƒN*/
+	color: #3972c7;
+	text-decoration: underline;
+}
+
+a:hover { /*ƒ}ƒEƒX‚ð‚Ì‚¹‚½‚Æ‚«*/
+	color: #ff0000;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+a:active { /*ƒNƒŠƒbƒN’†*/
+	text-decoration: none;
+}
+
+#wrapper {
+	background-image: url("img/haikei.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	color: white;
+}
+
+H1 {
+	padding-top: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "‚l‚r ‚o–¾’©", "‚l‚r –¾’©";
+	font-size: 50px;
+}
+
+#subtitle {
+	font-size: 30px;
+}
+
+.photo {
+	text-align: center;
+	margin: auto;
+	font-size: 30px;
+	border-color: white;
+	border-style: solid;
+	border-width: thin;
+}
+
+.bunnsyou {
+	text-align: left;
+}
+
+.details {
+	text-align: center;
+	height: 300;
+	width: 50%;
+	color: white;
+	border-color: white;
+	border-style: solid;
+	border-width: thin;
+	margin: auto;
+	padding: 50px;
+}
+
+p {
+	width: auto;
+	margin-left: auto;
+}
+
+.go_top {
+	text-align: right;
+	padding: 0px 300px 0px 0px;
+}
+
+.go_tytle {
+	text-align: left;
+	padding: 0px 0px 0px 310px;
+	float: left;
+}
