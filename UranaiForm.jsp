@@ -7,7 +7,7 @@
 <script src="date.js" type="text/javascript"></script>
 
 </HEAD><BODY onload="dateCheck('year', 'month', 'day')">
-<!-- ƒy[ƒW“Ç‚Ýž‚ÝŽž‚Éjavascriptì“®-->
+<!-- work javascript when load a window-->
 <DIV id="wrapper">
 
 <H1><span id="subtitle">60•ª—Þ</span>@“®•¨è‚¢</H1>
