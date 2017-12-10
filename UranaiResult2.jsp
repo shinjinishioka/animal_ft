@@ -1,3 +1,4 @@
+<!-- This is other pattern of design -->
 <%@ page contentType="text/html; charset=Windows-31J"%>
 <%@ page import="animal_ft.*"%>
 
@@ -26,9 +27,9 @@ int kansan_id = dao.kansan(intYear,intMonth,intDay);
 UranaiDTO ent = dao.getDetailById(kansan_id,strSex);
 
 if(strSex.equals("m")){
-	strSex = "’j";
+	strSex = "ç”·";
 }else{
-	strSex = "—";
+	strSex = "å¥³";
 }
 
 %> 
@@ -36,7 +37,7 @@ if(strSex.equals("m")){
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 	 "http://www.w3.org/TR/html4/sTRict.dTD">
 <HTML><HEAD>
-<TITLE>60•ª—Ş@“®•¨è‚¢</TITLE>
+<TITLE>60åˆ†é¡ã€€å‹•ç‰©å ã„</TITLE>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset="Windows-31J">
 <!--<LINK REL="stylesheet" TYPE="text/css" HREF="./style.css">-->
 
@@ -61,9 +62,9 @@ $(function(){
   
   $('#tab-menu li').on('click', function(){
     if($(this).not('active')){
-      // ƒ^ƒuƒƒjƒ…[
+      // ã‚¿ãƒ–ãƒ¡ãƒ‹ãƒ¥ãƒ¼
       $(this).addClass('active').siblings('li').removeClass('active');
-      // ƒ^ƒu‚Ì’†g
+      // ã‚¿ãƒ–ã®ä¸­èº«
       var index = $('#tab-menu li').index(this);
       $('#tab-box div').eq(index).addClass('active').siblings('div').removeClass('active');
     }
@@ -73,11 +74,11 @@ $(function(){
 </script>
 
 </HEAD><BODY>
-<H1 class="uranai" ID="result">è‚¢Œ‹‰Ê‚ğŒ©‚é</H1>
+<H1 class="uranai" ID="result">å ã„çµæœã‚’è¦‹ã‚‹</H1>
 
 <DIV ID="wrapper">
 
-<H1 class ="attention">60•ª—Ş“®•¨è‚¢</H1>
+<H1 class ="attention">60åˆ†é¡å‹•ç‰©å ã„</H1>
 <B><%=ent.get60Name()%></B>
 <P>
 
@@ -86,32 +87,32 @@ $(function(){
 
 <TABLE width="300" border="1">
 <TR><TD colspan="2"><%=strName%></th></TR>
-<TR><TD><%= intYear %>”N@<%= intMonth %>Œ@<%= intDay %>“ú</TD><TD><%=strSex%></TD></TR>
+<TR><TD><%= intYear %>å¹´ã€€<%= intMonth %>æœˆã€€<%= intDay %>æ—¥</TD><TD><%=strSex%></TD></TR>
 </TABLE>
 <TABLE  width="300" border="1">
-<!-- <TR><TD colspan="2">è‚¢Ú×</TR>
+<!-- <TR><TD colspan="2">å ã„è©³ç´°</TR>
 <TR><TD><%=ent.getDetail()%></TD><TR>-->
 <!-- 
 </TABLE>
 <TABLE width="300" border="1">
-<TR><TD colspan="3">‘Š«‚Ì—Ç‚¢“®•¨</TD></TR>
+<TR><TD colspan="3">ç›¸æ€§ã®è‰¯ã„å‹•ç‰©</TD></TR>
 <TR><TD><img src="img/i_<%=ent.getLover_picture()%>" alt="<%=ent.getLover_12id()%>"></TD>
 <TD><img src="img/i_<%=ent.getFriend_picture()%>" alt="<%=ent.getFriend_12id()%>"></TD>
 <TD><img src="img/i_<%=ent.getWork_picture()%>" alt="<%=ent.getWork_12id()%>"></TD></TR>
-<TR><TD>—ölF<%=ent.getLover_name()%></TD>
-<TD>—FlF<%=ent.getFriend_name()%></TD>
-<TD>d–F<%=ent.getWork_name()%></TD></TR>
+<TR><TD>æ‹äººï¼š<%=ent.getLover_name()%></TD>
+<TD>å‹äººï¼š<%=ent.getFriend_name()%></TD>
+<TD>ä»•äº‹ï¼š<%=ent.getWork_name()%></TD></TR>
 -->
 
 
 <ul id="tab-menu">
-  <li class="active">è‚¢Ú×</li>
-  <li>—öl</li>  
-  <li>—Fl</li>
-  <li>d–</li>
+  <li class="active">å ã„è©³ç´°</li>
+  <li>æ‹äºº</li>  
+  <li>å‹äºº</li>
+  <li>ä»•äº‹</li>
 </ul>
 
-<!-- ƒ^ƒu‚Ì’†g-->
+<!-- ã‚¿ãƒ–ã®ä¸­èº«-->
 <div id="tab-box">
   <div class="active"><%=ent.getDetail()%></div>
   <div><%=ent.getLover_detail()%><img src="img/i_<%=ent.getLover_picture()%>" alt="<%=ent.getLover_12id()%>"></div>
@@ -119,15 +120,15 @@ $(function(){
   <div><%=ent.getWork_detail()%><img src="img/i_<%=ent.getWork_picture()%>" alt="<%=ent.getWork_12id()%>"></div>
 </div>
 
-<p>TOP‚É–ß‚é</p>
-<p>£ƒy[ƒWã•”‚Ö‚à‚Ç‚é</p>								
+<p>TOPã«æˆ»ã‚‹</p>
+<p>â–²ãƒšãƒ¼ã‚¸ä¸Šéƒ¨ã¸ã‚‚ã©ã‚‹</p>								
 									
 <style>
 #result{
   padding: 25px;
  text-align: center;
 }
-/* ƒ^ƒuƒƒjƒ…[ */
+/* ã‚¿ãƒ–ãƒ¡ãƒ‹ãƒ¥ãƒ¼ */
 #tab-menu {
   list-style: none;
 }
@@ -141,7 +142,7 @@ $(function(){
   color: #fff;
 }
 
-/* ƒ^ƒu‚Ì’†g */
+/* ã‚¿ãƒ–ã®ä¸­èº« */
 #tab-box {
   padding: 25px;
   border: 5px solid #000;
